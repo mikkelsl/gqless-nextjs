@@ -1,15 +1,29 @@
 {
-  "name": "gqless-next-test",
+  "name": "gqless-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate": "gqless generate",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@gqless/cli": "^0.0.1-alpha.30",
+    "@gqless/logger": "^0.0.1-alpha.27",
+    "@gqless/react": "^0.0.1-alpha.27",
+    "@types/react": "^16.9.23",
+    "apollo-server-micro": "^2.11.0",
+    "faker": "^4.1.0",
+    "gqless": "^0.0.1-alpha.27",
     "next": "9.3.0",
     "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "react-dom": "16.13.0",
+    "react-no-ssr": "^1.1.0",
+    "typescript": "^3.8.3"
+  },
+  "gqless": {
+    "url": "http://localhost:3000/api",
+    "outputDir": "gqless"
   }
 }
